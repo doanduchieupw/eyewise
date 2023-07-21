@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: SVN-Gilroy;
+  src: url(./assets/fonts/SVN-Gilroy_Regular.otf);
+}
+
+:root {
+  --primary-color-1: #ffd8cb;
+  --primary-color-2: #ffc4b1;
+  --primary-color-3: #ffb097;
+  --primary-color-4: #ff9d7d;
+  --primary-color-5: #ff8963;
+  --primary-color-6: #d47253;
+  --primary-color-7: #aa5b42;
+  --primary-color-8: #804532;
+  --primary-color-9: #552e21;
+  --primary-color-10: #331b14;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "SVN-Gilroy";
+  vertical-align: baseline;
+}
+
+/* HEADER */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1136px;
+  width: 100%;
+  margin-inline: auto;
+  gap: 80px;
+  height: 80px;
+}
+.header__logo {
+  width: 175px;
+  height: 53px;
+  padding-right: 25px;
+  padding-bottom: 7px;
+}
+.header__menu--wrap {
+  display: flex;
+  gap: 13px;
+}
+
+.header__logo {
+  display: inline-block;
+}
+
+.header__menu--wrap span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header__menu--wrap span:hover {
+  color: var(--primary-color-5);
+}
+.header__btn--wrap {
+  gap: 4px;
+}
+
+.header__btn--item {
+  padding: 10px;
+}
+
+.header__btn--item:hover {
+  fill: var(--primary-color-5);
+  cursor: pointer;
+}
+
+/* SLIDER */
+.content__slider--container {
+  width: 100vw;
+  position: relative;
+}
+
+.slider--list {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__item {
+  width: 100%;
+  object-fit: cover;
+}
+
+#slider__indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.slider__indicator--btn {
+  list-style: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px var(--primary-color-5) solid;
+}
+
+.slider__indicator--btn:hover {
+  cursor: pointer;
+}
