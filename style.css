@@ -88,14 +88,16 @@
 .content__slider--container {
   width: 100vw;
   position: relative;
+  overflow: hidden;
 }
 
-.slider--list {
+.slider__list {
   width: 100%;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.5s;
 }
 
 .slider__item {
@@ -114,15 +116,20 @@
   gap: 12px;
 }
 
-.slider__indicator--btn {
-  list-style: none;
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px var(--primary-color-5) solid;
-}
-
 .slider__indicator--btn:hover {
   cursor: pointer;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  outline: 2px solid var(--primary-color-5);
+}
+
+input[type="radio"]:checked {
+  background-color: #ff8963;
+  border: 2px solid transparent;
 }

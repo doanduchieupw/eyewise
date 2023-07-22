@@ -1,7 +1,23 @@
-document.getElementById('slider__indicator').onclick = function(){
-    let btnList = document.querySelectorAll('.slider__indicator--btn');
-    let slideItem = document.querySelectorAll('.slider__indicator--btn');
+const slider = document.getElementById("slider");
+const listSLide = document.querySelector(".slider__list");
+const itemSlide = document.querySelectorAll(".slider__item");
+const indicator = document.querySelectorAll(".slider__indicator--btn");
+let itemActiveIndex = 0;
 
-    console.log("🚀 ~ file: main.js:3 ~ document.getElementById ~ btnList:", btnList)
-    btnList.
+function setHeightContainer() {
+  slider.style.height = itemSlide[0].offsetHeight + "px";
 }
+
+function activeSlider() {
+  listSLide.style.left = -itemSlide[itemActiveIndex].offsetLeft + "px";
+}
+
+indicator.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    itemActiveIndex = index;
+    activeSlider();
+  });
+});
+
+setTimeout(() => setHeightContainer(), 0);
+setInterval(() => itemActiveIndex++, 1000);
