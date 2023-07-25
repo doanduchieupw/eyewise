@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header__container">
       <img class="header__logo" src="./assets/img/logo.svg" alt="logo" />
       <div class="header__menu--wrap">
@@ -74,34 +75,187 @@
         </svg>
       </div>
     </header>
-    <div id="slider" class="content__slider--container">
-      <div class="slider__list">
-        <img
-          src="/assets/img/slide/slide1.png"
-          alt="slide1"
-          class="slider__item"
-        />
-        <img
-          src="/assets/img/slide/slide2.png"
-          alt="slide2"
-          class="slider__item"
-        />
-        <img
-          src="/assets/img/slide/slide3.png"
-          alt="slide3"
-          class="slider__item"
-        />
-        
+    <!-- SLIDER -->
+    <div id="content">
+      <div id="slider" class="content__slider--container">
+        <div class="slider__list">
+          <img
+            src="/assets/img/slide/slide1.png"
+            alt="slide1"
+            class="slider__item"
+          />
+          <img
+            src="/assets/img/slide/slide2.png"
+            alt="slide2"
+            class="slider__item"
+          />
+          <img
+            src="/assets/img/slide/slide3.png"
+            alt="slide3"
+            class="slider__item"
+          />
+        </div>
+        <div id="slider__indicator">
+          <input
+            type="radio"
+            name="slider"
+            value="1"
+            checked
+            class="slider__indicator--btn"
+          />
+          <input
+            type="radio"
+            name="slider"
+            value="2"
+            class="slider__indicator--btn"
+          />
+          <input
+            type="radio"
+            name="slider"
+            value="3"
+            class="slider__indicator--btn"
+          />
+        </div>
       </div>
-      <div id="slider__indicator">
-        <input type="radio"  name="slider" value="1" class="slider__indicator--btn" />
-        <input type="radio"  name="slider" value="2" class="slider__indicator--btn" />
-        <input type="radio"  name="slider" value="3" class="slider__indicator--btn" />
+      <!-- COLLECTION -->
+      <div class="content__collection--container">
+        <div>
+          <img
+            src="/assets/img/collection/collection-1.png"
+            alt="collection-1"
+          />
+          <img
+            src="/assets/img/collection/collection-2.png"
+            alt="collection-2"
+          />
+        </div>
+        <img src="/assets/img/collection/collection-3.png" alt="collection-3" />
+        <img src="/assets/img/collection/collection-4.png" alt="collection-4" />
+      </div>
+      <div class="content__bestseller--container">
+        <h3 class="bestseller__heading">Bán chạy nhất</h3>
+        <div class="bestseller__list">
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-1.png" alt="glass-1" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-1.png" alt="glass-1" />
+              <span class="bestseller__status">New</span>
+              <svg
+                width="23"
+                height="20"
+                viewBox="0 0 23 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.95511 2.49638C4.10986 1.34203 5.63889 0.638018 7.26674 0.511189C8.89458 0.38436 10.5142 0.843051 11.8338 1.80462C13.2279 0.796006 14.9504 0.348864 16.659 0.552071C18.3677 0.755279 19.9373 1.59396 21.0559 2.9014C22.1745 4.20885 22.7602 5.88933 22.6966 7.60882C22.633 9.32832 21.9247 10.9609 20.7125 12.1821L14.255 18.6397C13.6128 19.2817 12.7419 19.6423 11.8338 19.6423C10.9257 19.6423 10.0549 19.2817 9.41266 18.6397L2.95511 12.1833C1.67075 10.8988 0.949219 9.15681 0.949219 7.34039C0.949219 5.52398 1.67075 3.78082 2.95511 2.49638Z"
+                  fill="#7E7E7E"
+                />
+              </svg>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-2.png" alt="glass-2" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-3.png" alt="glass-3" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-4.png" alt="glass-4" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-5.png" alt="glass-5" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-6.png" alt="glass-6" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+
+          <div class="bestseller__card">
+            <div class="bestseller__image">
+              <img src="/assets/img/glass/glass-7.png" alt="glass-7" />
+              <span class="bestseller__status">New</span>
+            </div>
+            <div class="bestseller__info">
+              <span class="bestseller__name"
+                >Ray-Ban Aviator RB3025 004/78</span
+              >
+              <span class="bestseller__price">1.399.000 VNĐ</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="main.js"></script>
   </body>
 </html>
-
-  
