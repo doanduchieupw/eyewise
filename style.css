@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+  v2.0 | 20110126
+  License: none (public domain)
 */
 @font-face {
   font-family: SVN-Gilroy;
@@ -107,7 +107,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
 }
 
 /* SLIDER */
@@ -132,7 +131,7 @@
 .collection__wrapper {
   max-width: 1136px;
   width: 100%;
-  margin: 56px 0;
+  margin: 56px auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 19px;
@@ -314,25 +313,32 @@
   display: flex;
   gap: 24px;
   justify-content: space-between;
-  height: 500px;
+  margin-top: 32px;
 }
-.feedback__item {
-  list-style: none;
-  position: relative;
-  width: 100%;
-}
-
-.feedback__item::before {
-  content: "";
-  display: block;
-  padding-bottom: 150%;
-  width: 100%;
-}
-
-.feedback__image {
-  background-size: cover;
-  background-position: center;
+.feedback__list img {
+  height: fit-content;
   border-radius: 8px;
-  position: absolute;
-  inset: 0;
+}
+
+.feedback__image--aside {
+  margin-top: 46px;
+}
+.feedback__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.feedback__customer {
+  color: var(--primary-color-5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.feedback__comment {
+  padding-inline: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
 }
